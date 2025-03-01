@@ -1,0 +1,29 @@
+{
+	"mcpServers": {
+		"notion": {
+			"type": "command",
+			"command": "env",
+			"args": [
+				"NOTION_API_TOKEN=ntn_xxxxxxxx",
+				"node",
+				"/Users/xxxxxxxx/workspace/akirapapa-mcp-notion-server/notion/build/index.js"
+			],
+			"disabled": false
+		},
+		"memory": {
+			"command": "npx",
+			"args": ["-y", "@modelcontextprotocol/server-memory"]
+		},
+		"git": {
+			"command": "uvx",
+			"args": ["mcp-server-git", "--repository", "Test_Figma_MCP"]
+		},
+		"github": {
+			"command": "npx",
+			"args": ["-y", "@modelcontextprotocol/server-github"],
+			"env": {
+				"GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+			}
+		}
+	}
+}
