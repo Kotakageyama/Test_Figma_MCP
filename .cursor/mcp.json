@@ -16,7 +16,7 @@
 		},
 		"git": {
 			"command": "uvx",
-			"args": ["mcp-server-git", "--repository", "Test_Figma_MCP"]
+			"args": ["mcp-server-git", "--repository", "."]
 		},
 		"github": {
 			"command": "npx",
