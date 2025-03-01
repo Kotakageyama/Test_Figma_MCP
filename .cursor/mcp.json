@@ -15,7 +15,6 @@
 				"-y",
 				"figma-developer-mcp",
 				"--stdio",
-				"--port=3000",
 				"--figma-api-key=${FIGMA_API_KEY}"
 			]
 		}
