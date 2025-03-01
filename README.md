@@ -8,9 +8,9 @@ mcp.json に使用したい MCP を定義する。
 
 ## 0.46 以前
 
-docker を立ち上げてエンドポイントを設定するか、個別に入れる。
+個別に入れる。
 
--   [mpcs/README.md](./mpcs/README.md)
+-   [.cursor/README.md](.cursor/README.md)
 
 # Cursor Rules(Project Rules)
 
