@@ -1,6 +1,6 @@
-# MCP (Model Context Protocol) サーバーコンテナ
+# MCP (Model Context Protocol) サーバー
 
-このディレクトリには、各種 MCP サーバーの Dockerfile 構成が含まれています。
+このディレクトリには、各種 MCP サーバーの設定が含まれています。
 
 ## サポートしている MCP サーバー
 
@@ -30,12 +30,10 @@ cp .env.sample .env
 
 -   Figma MCP
 -   type: command
--   command: npx
--   args: `-y @modelcontextprotocol/server-figma --stdio --figma-api-key=${FIGMA_API_KEY}`
+-   args: `npx -y figma-developer-mcp --stdio --figma-api-key=${FIGMA_API_KEY}`
 -   GitHub MCP
 -   type: command
--   command: npx
--   args: `-y @modelcontextprotocol/server-github --github-personal-access-token=${GITHUB_TOKEN}`
+-   args: `npx -y @modelcontextprotocol/server-github --github-personal-access-token=${GITHUB_TOKEN}`
 
 ## 参考リンク
 
