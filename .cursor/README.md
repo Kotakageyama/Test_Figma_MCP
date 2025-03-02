@@ -29,8 +29,8 @@ cp .env.sample .env
 ### mcp.json を利用しない場合
 
 -   Figma MCP
--   type: command
--   args: `npx -y figma-developer-mcp --stdio --figma-api-key=${FIGMA_API_KEY}`
+-   type: sse
+-   args: `http://localhost:3000/sse`
 -   GitHub MCP
 -   type: command
 -   args: `npx -y @modelcontextprotocol/server-github --github-personal-access-token=${GITHUB_TOKEN}`
