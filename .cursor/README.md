@@ -1,11 +1,11 @@
 # MCP (Model Context Protocol) サーバー
 
-このディレクトリには、各種 MCP サーバーの設定が含まれています。
+このディレクトリには、各種MCPサーバーの設定が含まれています。
 
 ## サポートしている MCP サーバー
 
--   **Figma MCP**: Figma のコンテキスト情報を取得するサーバー
--   **GitHub MCP**: GitHub のコンテキスト情報を取得するサーバー
+-   **Figma MCP**: Figmaのコンテキスト情報を取得するサーバー
+-   **GitHub MCP**: GitHubのコンテキスト情報を取得するサーバー
 
 ## 使用方法
 
@@ -20,8 +20,8 @@ cp mcp.json.sample mcp.json
 
 ## 環境変数
 
--   `GITHUB_TOKEN`: GitHub API へのアクセスに必要なトークン
--   `FIGMA_API_KEY`: Figma API へのアクセスに必要なトークン
+-   `GITHUB_TOKEN`: GitHub APIへのアクセスに必要なトークン
+-   `FIGMA_API_KEY`: Figma APIへのアクセスに必要なトークン
 
 ## MCP サーバーの設定
 

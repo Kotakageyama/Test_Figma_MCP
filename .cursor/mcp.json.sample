@@ -3,22 +3,21 @@
 		"github": {
 			"type": "command",
 			"command": "env",
-			"args": ["GITHUB_PERSONAL_ACCESS_TOKEN=your_token", "-y", "@modelcontextprotocol/server-github"],
-			"env": {
-				"GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
-			}
+			"args": [
+				"GITHUB_PERSONAL_ACCESS_TOKEN=your_token",
+				"-y",
+				"@modelcontextprotocol/server-github"
+			]
 		},
 		"figma": {
 			"type": "command",
-			"command": "npx",
+			"command": "env",
 			"args": [
+				"FIGMA_API_KEY=your_token",
 				"-y",
 				"figma-developer-mcp",
 				"--stdio"
-			],
-			"env": {
-				"FIGMA_API_KEY": "${FIGMA_API_KEY}"
-			}
+			]
 		}
 	}
 }
