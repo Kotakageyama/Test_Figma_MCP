@@ -24,7 +24,7 @@ RUN npm install
 RUN npm run build
 
 # デフォルトのポートを指定
-EXPOSE 3000
+EXPOSE 3001
 
 # サーバーを起動
 CMD ["node", "build/index.js", "--port=${PORT}"] 
