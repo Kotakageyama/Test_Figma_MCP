@@ -12,6 +12,12 @@ mcp.json に使用したい MCP を定義する。
 
 -   [.cursor/README.md](.cursor/README.md)
 
+# サポートしているMCPサーバー
+
+- **Figma MCP**: Figmaのデザイン情報を取得するためのサーバー
+- **GitHub MCP**: GitHubのリポジトリ操作を行うためのサーバー
+- **Notion MCP**: Notionのデータベースやページを操作するためのサーバー
+
 # Cursor Rules(Project Rules)
 
 cursor に適用させるルールを記載する。
