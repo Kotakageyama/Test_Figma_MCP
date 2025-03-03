@@ -9,3 +9,14 @@ services:
         env_file:
             - .env
         restart: unless-stopped
+
+    notion-mcp:
+        build:
+            context: ./mcps/notion
+        ports:
+            - "3001:3001"
+        environment:
+            - PORT=3001
+        env_file:
+            - .env
+        restart: unless-stopped

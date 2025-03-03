@@ -18,6 +18,16 @@
 				"figma-developer-mcp",
 				"--stdio"
 			]
+		},
+		"notion": {
+			"type": "command",
+			"command": "env",
+			"args": [
+				"NOTION_API_KEY=your_notion_integration_token",
+				"npx",
+				"-y",
+				"notion-mcp"
+			]
 		}
 	}
 }

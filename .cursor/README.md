@@ -40,6 +40,9 @@ $ docker compose up -d
 -   GitHub MCP
 -   type: command
 -   args: `env GITHUB_PERSONAL_ACCESS_TOKEN=your_token npx -y @modelcontextprotocol/server-github`
+-   Notion MCP
+-   type: sse
+-   args: `http://localhost:3001/sse`
 
 ## 参考リンク
 
