@@ -41,3 +41,7 @@ Global Cursor Rules が有効化できないので`*`を使用する。
 
 `.cursorindexingignore`を作成する。
 自動的に`.gitignore`を参照する。
+
+# コミットしたい変更
+
+普通にコミットしたいです。
