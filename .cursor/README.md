@@ -6,6 +6,8 @@
 
 -   **Figma MCP**: Figmaのコンテキスト情報を取得するサーバー
 -   **GitHub MCP**: GitHubのコンテキスト情報を取得するサーバー
+-   **Notion MCP**: Notionのコンテキスト情報を取得するサーバー
+-   **Playwright MCP**: ブラウザ自動化機能を提供するサーバー
 
 ## 使用方法
 
@@ -22,6 +24,7 @@ cp mcp.json.sample mcp.json
 
 -   `GITHUB_TOKEN`: GitHub APIへのアクセスに必要なトークン
 -   `FIGMA_API_KEY`: Figma APIへのアクセスに必要なトークン
+-   `NOTION_API_KEY`: Notion APIへのアクセスに必要なトークン
 
 ## MCP サーバーの設定
 
@@ -43,8 +46,13 @@ $ docker compose up -d
 -   Notion MCP
 -   type: sse
 -   args: `http://localhost:3001/sse`
+-   Playwright MCP
+-   type: command
+-   args: `npx -y @playwright/mcp@latest`
 
 ## 参考リンク
 
 -   [Figma MCP](https://github.com/GLips/Figma-Context-MCP)
 -   [GitHub MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/github)
+-   [Notion MCP](https://github.com/suekou/mcp-notion-server)
+-   [Playwright MCP](https://github.com/microsoft/playwright-mcp)

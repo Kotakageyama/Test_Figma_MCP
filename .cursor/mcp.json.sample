@@ -25,11 +25,18 @@
 			"command": "npx",
 			"args": [
 				"-y",
-				"notion-mcp"
+				"@suekou/mcp-notion-server"
 			],
 			"env": {
-				"NOTION_API_KEY": "your_notion_integration_token"
+				"NOTION_API_TOKEN": "your-integration-token"
 			}
+		},
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@playwright/mcp@latest"
+			]
 		}
 	}
 }
