@@ -1,33 +1,35 @@
 {
 	"mcpServers": {
 		"github": {
-			"type": "command",
-			"command": "env",
+			"command": "npx",
 			"args": [
-				"GITHUB_PERSONAL_ACCESS_TOKEN=your_token",
 				"-y",
 				"@modelcontextprotocol/server-github"
-			]
+			],
+			"env": {
+				"GITHUB_PERSONAL_ACCESS_TOKEN": "your_token"
+			}
 		},
 		"figma": {
-			"type": "command",
-			"command": "env",
+			"command": "npx",
 			"args": [
-				"FIGMA_API_KEY=your_token",
 				"-y",
 				"figma-developer-mcp",
 				"--stdio"
-			]
+			],
+			"env": {
+				"FIGMA_API_KEY": "your_token"
+			}
 		},
 		"notion": {
-			"type": "command",
-			"command": "env",
+			"command": "npx",
 			"args": [
-				"NOTION_API_KEY=your_notion_integration_token",
-				"npx",
 				"-y",
 				"notion-mcp"
-			]
+			],
+			"env": {
+				"NOTION_API_KEY": "your_notion_integration_token"
+			}
 		}
 	}
 }
